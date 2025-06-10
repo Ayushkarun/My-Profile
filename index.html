@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayush Karun | Portfolio</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
@@ -33,7 +33,8 @@
           Over the past year, I have honed my technical skills as a Software Engineer Trainee, specializing in database
           management and optimization using MSSQL.
           This experience has equipped me with a foundation in problem-solving and system efficiency.</p>
-        <p>In parallel, my interest in the financial markets led me to pursue swing trading, where I apply analytical and
+        <p>In parallel, my interest in the financial markets led me to pursue swing trading, where I apply analytical
+          and
           strategic thinking to identify profitable opportunities.
           I'm excited to connect with like-minded professionals and explore opportunities that leverage my skills in
           technology and finance.</p>
@@ -69,7 +70,7 @@
           </div>
         </div>
       </section>
-      
+
       <section id="contact" class="section">
         <h2>Contact Me</h2>
         <p>Feel free to reach out via email or connect with me on LinkedIn!</p>
@@ -114,6 +115,17 @@
       spacing: 18.0
     });
   </script>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
 </body>
 
 </html>
