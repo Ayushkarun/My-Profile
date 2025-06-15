@@ -19,7 +19,7 @@
         <img src="Asset/p.jpg" alt="Ayush Karun" class="profile-img">
       </div>
 
-      <h1>I'm Ayush Karun </h1>
+      <h1><span class="typing-text"></span><span class="cursor">|</span></h1>
       <p>A Software Engineer</p>
     </header>
 
@@ -135,6 +135,23 @@
       });
     });
   </script>
+
+<script>
+  const text = "Hey, I'm Ayush Karun";
+  const typingText = document.querySelector(".typing-text");
+  let index = 0;
+
+  function typeEffect() {
+    if (index < text.length) {
+      typingText.textContent += text.charAt(index);
+      index++;
+      setTimeout(typeEffect, 150); 
+    }
+  }
+
+  window.onload = typeEffect;
+</script>
+
 </body>
 
 </html>

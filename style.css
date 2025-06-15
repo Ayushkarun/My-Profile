@@ -130,3 +130,25 @@ footer a:hover {
   box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
 }
 
+.typing-text {
+  font-size: 65px;
+  font-weight: bold;
+  color: #0dcaf0;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid transparent;
+}
+
+.cursor {
+  font-size: 65px;
+  font-weight: bold;
+  color: #0dcaf0;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+
