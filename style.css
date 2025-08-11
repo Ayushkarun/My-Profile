@@ -146,6 +146,23 @@ footer a:hover {
   animation: blink 0.7s infinite;
 }
 
+@media (max-width: 768px) {
+  header h1,
+  .typing-text,
+  .cursor {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1,
+  .typing-text,
+  .cursor {
+    font-size: 28px;
+  }
+}
+
+
 @keyframes blink {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0; }
